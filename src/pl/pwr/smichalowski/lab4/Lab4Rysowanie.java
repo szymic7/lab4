@@ -1,6 +1,5 @@
 package pl.pwr.smichalowski.lab4;
 
-import javax.sound.sampled.Line;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
@@ -14,6 +13,7 @@ public class Lab4Rysowanie extends JFrame {
     private JTextField komunikatText;
     private JButton kwadrat, kolo;
     private Figura f1;
+    private int indexPrzesuwanej = -1, xPrzesuwanej, yPrzesuwanej;
     public Font font = new Font("Arial", Font.PLAIN, 14);
     public Font smallFont = new Font("Arial", Font.BOLD, 11);
     public LineBorder thickBorder = new LineBorder(Color.BLACK, 3, false);
@@ -32,24 +32,23 @@ public class Lab4Rysowanie extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 switch(e.getKeyCode()){
-                    case 67:
+                    case 67: // klawisz 'C' - zmiana kolorow figur
                         plotno.setColorChanged(1);
                         plotno.repaint();
                         break;
-                    case 17:
+                    case 17: // klawisz 'Ctrl' - zmiana rozmiaru figur
                         if(plotno.getSizeChanged() == 0) plotno.setSizeChanged(1);
                         else if(plotno.getSizeChanged() == 1) plotno.setSizeChanged(0);
                         plotno.repaint();
-                        System.out.println("Wcisnieto ctrl.");
                         break;
                     default:
-                        System.out.println("Cos poszlo nie tak.");
+                        System.out.println("Klawisz nieobslugiwany.");
                         break;
                 }
             }
             @Override
             public void keyReleased(KeyEvent e) {
-                if(e.getKeyChar()=='c'){
+                if(e.getKeyChar() == 'c'){
                     plotno.setColorChanged(0);
                     plotno.repaint();
                 }
@@ -85,15 +84,34 @@ public class Lab4Rysowanie extends JFrame {
                         plotno.repaint();
                         break;
                     default:
-                        System.out.println("Cos poszlo nie tak. Sprobuj narysowac figure podobnie.");
+                        System.out.println("Cos poszlo nie tak. Sprobuj narysowac figure ponownie.");
                         break;
                 }
             }
             @Override
-            public void mousePressed(MouseEvent e) {}
+            public void mousePressed(MouseEvent e) {
+                for(int i = 0; i < 20; i++) {
+                    if(plotno.getFigura(i)!=null) {
+                        Figura f = plotno.getFigura(i);
+                        if (f.getX() - 20 <= e.getX() && e.getX() <= f.getX() + 20
+                                && f.getY() - 20 <= e.getY() && e.getY() <= f.getY() + 20) {
+                            xPrzesuwanej = e.getX() - f.getX();
+                            yPrzesuwanej = e.getY() - f.getY();
+                            indexPrzesuwanej = i;
+                            break;
+                        }
+                    }
+                }
+            }
             @Override
             public void mouseReleased(MouseEvent e) {
                 komunikatText.setText("Mysz zostala puszczona.");
+
+                if(indexPrzesuwanej != -1) {
+                    indexPrzesuwanej = -1;
+                    xPrzesuwanej = 0;
+                    yPrzesuwanej = 0;
+                }
             }
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -103,6 +121,19 @@ public class Lab4Rysowanie extends JFrame {
             public void mouseExited(MouseEvent e) {
                 komunikatText.setText("Kursor opuscil obszar rysowania.");
             }
+
+        });
+        plotno.addMouseMotionListener(new MouseMotionListener() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                if(indexPrzesuwanej != -1) {
+                    plotno.getFigura(indexPrzesuwanej).setX(e.getX() - xPrzesuwanej);
+                    plotno.getFigura(indexPrzesuwanej).setY(e.getY() - yPrzesuwanej);
+                    plotno.repaint();
+                }
+            }
+            @Override
+            public void mouseMoved(MouseEvent e) {}
 
         });
         jpanel.add(plotno);

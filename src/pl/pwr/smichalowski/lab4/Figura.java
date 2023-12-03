@@ -9,8 +9,6 @@ public abstract class Figura {
         this.x = x;
         this.y = y;
     }
-
-    public Figura() {}
     public void setX(int x) {
         this.x = x;
     }

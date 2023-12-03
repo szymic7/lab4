@@ -3,7 +3,6 @@ package pl.pwr.smichalowski.lab4;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class MyPanel extends JPanel {
     private Graphics2D g2d;
@@ -44,6 +43,9 @@ public class MyPanel extends JPanel {
 
     public void setSizeChanged(int y) {
         this.sizeChanged = y;
+    }
+    public Figura getFigura(int index) {
+        return narysowaneFigury[index];
     }
 
     @Override

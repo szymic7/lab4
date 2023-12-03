@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25e19a60-3c4a-4930-8dcc-831628d435a2" name="Changes" comment="dodana funkcjonalnosc - mozliwe rysowanie figur na plotnie">
+    <list default="true" id="25e19a60-3c4a-4930-8dcc-831628d435a2" name="Changes" comment="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +36,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/szymo/IdeaProjects/lab3_jframe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/szymo/IdeaProjects/lab3_jframe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +61,8 @@
       <workItem from="1700486778062" duration="1299000" />
       <workItem from="1700996361106" duration="6872000" />
       <workItem from="1701604453684" duration="5547000" />
-      <workItem from="1701616320001" duration="6251000" />
+      <workItem from="1701616320001" duration="6570000" />
+      <workItem from="1701623331565" duration="3070000" />
     </task>
     <task id="LOCAL-00001" summary="zrobione zadania 1 i 3, utworzone klasy do pozostałych zadań">
       <option name="closed" value="true" />
@@ -78,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701609899989</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru">
+      <option name="closed" value="true" />
+      <created>1701622673100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701622673100</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="zrobione zadania 1 i 3, utworzone klasy do pozostałych zadań" />
     <MESSAGE value="dodana funkcjonalnosc - mozliwe rysowanie figur na plotnie" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodana funkcjonalnosc - mozliwe rysowanie figur na plotnie" />
+    <MESSAGE value="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru" />
+    <option name="LAST_COMMIT_MESSAGE" value="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru" />
   </component>
 </project>
