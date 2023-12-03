@@ -14,4 +14,7 @@ public class Kolo extends Figura {
     public void rysuj(Graphics2D graphics2D){
         graphics2D.fillOval(getX()-getPromien(), getY()-getPromien(), 2*getPromien(), 2*getPromien());
     }
+    public void rysujDuze(Graphics2D graphics2D){
+        graphics2D.fillOval(getX()-2*getPromien(), getY()-2*getPromien(), 4*getPromien(), 4*getPromien());
+    }
 }

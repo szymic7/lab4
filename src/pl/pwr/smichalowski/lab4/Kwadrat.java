@@ -15,4 +15,7 @@ public class Kwadrat extends Figura {
     public void rysuj(Graphics2D graphics2D){
         graphics2D.fillRect(this.getX()-(this.getBok()/2), this.getY()-(this.getBok()/2), bok, bok);
     }
+    public void rysujDuze(Graphics2D graphics2D) {
+        graphics2D.fillRect(this.getX()-(this.getBok()), this.getY()-(this.getBok()), 2*bok, 2*bok);
+    }
 }

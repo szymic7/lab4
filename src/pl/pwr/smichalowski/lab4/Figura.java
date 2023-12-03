@@ -23,5 +23,7 @@ public abstract class Figura {
     public int getY() {
         return this.y;
     }
+
     public abstract void rysuj(Graphics2D graphics2D);
+    public abstract void rysujDuze(Graphics2D graphics2D);
 }
