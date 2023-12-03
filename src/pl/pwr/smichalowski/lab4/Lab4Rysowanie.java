@@ -4,17 +4,20 @@ import javax.sound.sampled.Line;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class Lab4Rysowanie extends JFrame {
 
     private JPanel jpanel;
-    private JPanel plotno;
+    private MyPanel plotno;
     private JLabel komunikaty;
     private JTextField komunikatText;
-    private JButton kwadrat, trojkat;
+    private JButton kwadrat, kolo;
     public Font font = new Font("Arial", Font.PLAIN, 14);
     public Font smallFont = new Font("Arial", Font.BOLD, 11);
-    public LineBorder thinBorder = new LineBorder(Color.BLACK, 5, true);
     public LineBorder thickBorder = new LineBorder(Color.BLACK, 3, false);
 
     public Lab4Rysowanie() {
@@ -33,11 +36,34 @@ public class Lab4Rysowanie extends JFrame {
         this.add(jpanel);
 
 
-        // plotno - JPanel do rysowania
-        plotno = new JPanel();
+        // plotno - Panel do rysowania
+        plotno = new MyPanel();
         plotno.setBounds(20, 20, 650, 450);
-        plotno.setBorder(thinBorder);
-        plotno.setBackground(new Color(211, 204, 191));
+        plotno.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if(plotno.hasFigura()) {
+                    plotno.getFigura().setX(e.getX());
+                    plotno.getFigura().setY(e.getY());
+                    plotno.repaint();
+                }
+            }
+            @Override
+            public void mousePressed(MouseEvent e) {}
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                komunikatText.setText("Mysz zostala puszczona.");
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                komunikatText.setText("Kursor znajduje sie w obszarze rysowania.");
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                komunikatText.setText("Kursor opuscil obszar rysowania.");
+            }
+
+        });
         jpanel.add(plotno);
 
 
@@ -62,15 +88,29 @@ public class Lab4Rysowanie extends JFrame {
         kwadrat.setFont(smallFont);
         kwadrat.setBounds(685, 150, 80, 80);
         kwadrat.setBackground(new Color(188, 246, 162));
+        kwadrat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!(plotno.getFigura() instanceof Kwadrat))
+                    plotno.setKwadrat();
+            }
+        });
         jpanel.add(kwadrat);
 
 
-        // JButton - trojkat
-        trojkat = new JButton("Trojkat");
-        trojkat.setFont(smallFont);
-        trojkat.setBounds(685, 250, 80, 80);
-        trojkat.setBackground(new Color(190, 255, 255));
-        jpanel.add(trojkat);
+        // JButton - kolo
+        kolo = new JButton("Kolo");
+        kolo.setFont(smallFont);
+        kolo.setBounds(685, 250, 80, 80);
+        kolo.setBackground(new Color(190, 255, 255));
+        kolo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!(plotno.getFigura() instanceof Kolo))
+                    plotno.setKolo();
+            }
+        });
+        jpanel.add(kolo);
 
     }
 

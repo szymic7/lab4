@@ -7,6 +7,7 @@ public class Kwadrat extends Figura {
     public Kwadrat(int x, int y){
         super(x, y);
     }
+    public Kwadrat() {}
     public int getBok() {
         return this.bok;
     }

@@ -7,6 +7,7 @@ public class Kolo extends Figura {
     public Kolo(int x, int y) {
         super(x, y);
     }
+    public Kolo() {}
     public int getPromien() {
         return this.promien;
     }
