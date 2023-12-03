@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25e19a60-3c4a-4930-8dcc-831628d435a2" name="Changes" comment="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru">
+    <list default="true" id="25e19a60-3c4a-4930-8dcc-831628d435a2" name="Changes" comment="dodana funkcjonalnosc - przesuwanie narysowanych figur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Class.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" afterDir="false" />
     </list>
@@ -62,7 +63,8 @@
       <workItem from="1700996361106" duration="6872000" />
       <workItem from="1701604453684" duration="5547000" />
       <workItem from="1701616320001" duration="6570000" />
-      <workItem from="1701623331565" duration="3070000" />
+      <workItem from="1701623331565" duration="3225000" />
+      <workItem from="1701637940016" duration="4368000" />
     </task>
     <task id="LOCAL-00001" summary="zrobione zadania 1 i 3, utworzone klasy do pozostałych zadań">
       <option name="closed" value="true" />
@@ -88,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701622673100</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dodana funkcjonalnosc - przesuwanie narysowanych figur">
+      <option name="closed" value="true" />
+      <created>1701626447702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701626447702</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +108,7 @@
     <MESSAGE value="zrobione zadania 1 i 3, utworzone klasy do pozostałych zadań" />
     <MESSAGE value="dodana funkcjonalnosc - mozliwe rysowanie figur na plotnie" />
     <MESSAGE value="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru" />
-    <option name="LAST_COMMIT_MESSAGE" value="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru" />
+    <MESSAGE value="dodana funkcjonalnosc - przesuwanie narysowanych figur" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodana funkcjonalnosc - przesuwanie narysowanych figur" />
   </component>
 </project>

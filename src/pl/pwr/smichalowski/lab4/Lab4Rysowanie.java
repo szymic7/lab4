@@ -16,7 +16,8 @@ public class Lab4Rysowanie extends JFrame {
     private int indexPrzesuwanej = -1, xPrzesuwanej, yPrzesuwanej;
     public Font font = new Font("Arial", Font.PLAIN, 14);
     public Font smallFont = new Font("Arial", Font.BOLD, 11);
-    public LineBorder thickBorder = new LineBorder(Color.BLACK, 3, false);
+    public LineBorder border = new LineBorder(Color.BLACK, 3, false);
+
 
     public Lab4Rysowanie() {
 
@@ -66,7 +67,8 @@ public class Lab4Rysowanie extends JFrame {
         // plotno - Panel do rysowania
         plotno = new MyPanel();
         plotno.setBounds(20, 20, 650, 450);
-        plotno.setFocusable(false);
+        jpanel.add(plotno);
+
         plotno.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -88,6 +90,7 @@ public class Lab4Rysowanie extends JFrame {
                         break;
                 }
             }
+
             @Override
             public void mousePressed(MouseEvent e) {
                 for(int i = 0; i < 20; i++) {
@@ -103,6 +106,7 @@ public class Lab4Rysowanie extends JFrame {
                     }
                 }
             }
+
             @Override
             public void mouseReleased(MouseEvent e) {
                 komunikatText.setText("Mysz zostala puszczona.");
@@ -113,16 +117,19 @@ public class Lab4Rysowanie extends JFrame {
                     yPrzesuwanej = 0;
                 }
             }
+
             @Override
             public void mouseEntered(MouseEvent e) {
                 komunikatText.setText("Kursor znajduje sie w obszarze rysowania.");
             }
+
             @Override
             public void mouseExited(MouseEvent e) {
                 komunikatText.setText("Kursor opuscil obszar rysowania.");
             }
 
         });
+
         plotno.addMouseMotionListener(new MouseMotionListener() {
             @Override
             public void mouseDragged(MouseEvent e) {
@@ -132,11 +139,11 @@ public class Lab4Rysowanie extends JFrame {
                     plotno.repaint();
                 }
             }
+
             @Override
             public void mouseMoved(MouseEvent e) {}
 
         });
-        jpanel.add(plotno);
 
 
         // JLabel - komunikaty
@@ -149,7 +156,7 @@ public class Lab4Rysowanie extends JFrame {
         // JTextField - komunikatText
         komunikatText = new JTextField("");
         komunikatText.setFont(font);
-        komunikatText.setBorder(thickBorder);
+        komunikatText.setBorder(border);
         komunikatText.setBounds(20, 505, 650, 35);
         komunikatText.setFocusable(false);
         jpanel.add(komunikatText);
@@ -161,13 +168,15 @@ public class Lab4Rysowanie extends JFrame {
         kwadrat.setBounds(685, 150, 80, 80);
         kwadrat.setBackground(new Color(188, 246, 162));
         kwadrat.setFocusable(false);
+        jpanel.add(kwadrat);
         kwadrat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 plotno.setWybranaFigura(1);
+                kwadrat.setBorder(border);
+                kolo.setBorder(null);
             }
         });
-        jpanel.add(kwadrat);
 
 
         // JButton - kolo
@@ -176,15 +185,18 @@ public class Lab4Rysowanie extends JFrame {
         kolo.setBounds(685, 250, 80, 80);
         kolo.setBackground(new Color(190, 255, 255));
         kolo.setFocusable(false);
+        jpanel.add(kolo);
         kolo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 plotno.setWybranaFigura(2);
+                kwadrat.setBorder(null);
+                kolo.setBorder(border);
             }
         });
-        jpanel.add(kolo);
 
-    }
+    } // koniec konstruktora obiektu klasy Lab4Rysowanie
+
 
     public static void main(String[] args){
         SwingUtilities.invokeLater(new Runnable() {
@@ -194,4 +206,5 @@ public class Lab4Rysowanie extends JFrame {
             }
         });
     }
-}
+
+} // koniec klasy Lab4Rysowanie

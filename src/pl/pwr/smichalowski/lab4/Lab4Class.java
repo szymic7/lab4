@@ -1,6 +1,7 @@
 package pl.pwr.smichalowski.lab4;
 
 import javax.swing.*;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -11,13 +12,14 @@ public class Lab4Class extends JFrame {
 
     private JPanel panel;
     private JTextArea textArea;
-    public final Font font = new Font("Arial", Font.PLAIN, 22);
+    public final Font font = new Font("Arial", Font.PLAIN, 20);
+    public int x, y;
 
     public Lab4Class() {
 
         // JFrame
         this.setTitle("Zadanie 1 i 3");
-        this.setSize(700, 700);
+        this.setSize(500, 500);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setFocusable(true);
@@ -30,7 +32,7 @@ public class Lab4Class extends JFrame {
                         textArea.setForeground(Color.RED);
                         break;
                     case 'b':
-                        textArea.setForeground(Color.CYAN);
+                        textArea.setForeground(Color.BLUE);
                         break;
                     case 'c':
                         textArea.setText("");
@@ -59,7 +61,8 @@ public class Lab4Class extends JFrame {
 
         // textArea
         textArea = new JTextArea("Przykladowy tekst");
-        textArea.setBounds(200, 100, 300, 200);
+        textArea.setBounds(100, 50, 300, 200);
+        textArea.setBorder(new LineBorder(Color.BLACK, 2, false));
         textArea.setFont(font);
         textArea.setCaretPosition(textArea.getText().length());
         textArea.setFocusable(false);
@@ -69,8 +72,8 @@ public class Lab4Class extends JFrame {
         textArea.addMouseListener(new MouseListener(){
             @Override
             public void mouseClicked(MouseEvent e){
-                int x = e.getX();
-                int y = e.getY();
+                x = e.getX();
+                y = e.getY();
                 System.out.println("Wspolrzedne klikniecia: x = " + x + ", y = " + y);
             }
 
@@ -93,7 +96,8 @@ public class Lab4Class extends JFrame {
         });
 
 
-    }
+    } // koniec konstruktora obiektu klasy Lab4Class
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -103,4 +107,5 @@ public class Lab4Class extends JFrame {
             }
         });
     }
-}
+
+} // koniec klasy Lab4Class

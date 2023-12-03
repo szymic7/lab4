@@ -3,7 +3,9 @@ package pl.pwr.smichalowski.lab4;
 import java.awt.*;
 
 public class Kwadrat extends Figura {
+
     private final int bok = 40;
+
 
     public Kwadrat(int x, int y){
         super(x, y);

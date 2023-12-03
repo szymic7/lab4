@@ -3,7 +3,9 @@ package pl.pwr.smichalowski.lab4;
 import java.awt.*;
 
 public class Kolo extends Figura {
+
     private final int promien = 20;
+
 
     public Kolo(int x, int y) {
         super(x, y);
