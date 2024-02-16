@@ -1,4 +1,8 @@
-package pl.pwr.smichalowski.lab4;
+package pl.pwr.smichalowski.lab4.zad2.komponenty_swinga;
+
+import pl.pwr.smichalowski.lab4.zad2.figury.Figura;
+import pl.pwr.smichalowski.lab4.zad2.figury.Kolo;
+import pl.pwr.smichalowski.lab4.zad2.figury.Kwadrat;
 
 import javax.swing.*;
 import java.awt.*;

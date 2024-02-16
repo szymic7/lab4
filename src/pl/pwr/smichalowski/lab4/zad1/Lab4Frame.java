@@ -1,4 +1,4 @@
-package pl.pwr.smichalowski.lab4;
+package pl.pwr.smichalowski.lab4.zad1;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -8,14 +8,14 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class Lab4Class extends JFrame {
+public class Lab4Frame extends JFrame {
 
     private JPanel panel;
     private JTextArea textArea;
-    public final Font font = new Font("Arial", Font.PLAIN, 20);
-    public int x, y;
+    private final Font font = new Font("Arial", Font.PLAIN, 20);
+    private int x, y;
 
-    public Lab4Class() {
+    public Lab4Frame() {
 
         // JFrame
         this.setTitle("Zadanie 1 i 3");
@@ -103,7 +103,7 @@ public class Lab4Class extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Lab4Class().setVisible(true);
+                new Lab4Frame().setVisible(true);
             }
         });
     }

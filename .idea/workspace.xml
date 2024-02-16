@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25e19a60-3c4a-4930-8dcc-831628d435a2" name="Changes" comment="dodana funkcjonalnosc - przesuwanie narysowanych figur">
+    <list default="true" id="25e19a60-3c4a-4930-8dcc-831628d435a2" name="Changes" comment="finalna wersja programu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/zad2/figury/Figura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/zad2/figury/Kolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Kwadrat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/zad2/figury/Kwadrat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/zad1/Lab4Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/Lab4Rysowanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/zad2/komponenty_swinga/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/pwr/smichalowski/lab4/zad2/komponenty_swinga/MyPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/szymo/IdeaProjects/lab3_jframe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/szymo/IdeaProjects/lab4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +64,28 @@
       <workItem from="1701604453684" duration="5547000" />
       <workItem from="1701616320001" duration="6570000" />
       <workItem from="1701623331565" duration="3225000" />
-      <workItem from="1701637940016" duration="4368000" />
+      <workItem from="1701637940016" duration="4429000" />
+      <workItem from="1701642462798" duration="2000" />
+      <workItem from="1701692097101" duration="184000" />
+      <workItem from="1701693453025" duration="1770000" />
+      <workItem from="1701858551970" duration="604000" />
+      <workItem from="1701867242871" duration="18000" />
+      <workItem from="1702031989185" duration="87000" />
+      <workItem from="1702041200052" duration="285000" />
+      <workItem from="1702223092992" duration="611000" />
+      <workItem from="1702902135204" duration="24000" />
+      <workItem from="1702904167124" duration="1985000" />
+      <workItem from="1703090350675" duration="21000" />
+      <workItem from="1704730472230" duration="19000" />
+      <workItem from="1704810373030" duration="108000" />
+      <workItem from="1704811584401" duration="633000" />
+      <workItem from="1704989395549" duration="200000" />
+      <workItem from="1705084425628" duration="1857000" />
+      <workItem from="1705156794429" duration="626000" />
+      <workItem from="1705235716916" duration="10000" />
+      <workItem from="1706459263971" duration="500000" />
+      <workItem from="1706515615179" duration="385000" />
+      <workItem from="1708082124672" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="zrobione zadania 1 i 3, utworzone klasy do pozostałych zadań">
       <option name="closed" value="true" />
@@ -98,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701626447702</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finalna wersja programu">
+      <option name="closed" value="true" />
+      <created>1701642363622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701642363622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +138,7 @@
     <MESSAGE value="dodana funkcjonalnosc - mozliwe rysowanie figur na plotnie" />
     <MESSAGE value="mozliwe dodawanie wielu figur, zmiena koloru i rozmiaru" />
     <MESSAGE value="dodana funkcjonalnosc - przesuwanie narysowanych figur" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodana funkcjonalnosc - przesuwanie narysowanych figur" />
+    <MESSAGE value="finalna wersja programu" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalna wersja programu" />
   </component>
 </project>

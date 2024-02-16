@@ -1,4 +1,4 @@
-package pl.pwr.smichalowski.lab4;
+package pl.pwr.smichalowski.lab4.zad2.figury;
 
 import java.awt.*;
 

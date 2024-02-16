@@ -1,11 +1,15 @@
-package pl.pwr.smichalowski.lab4;
+package pl.pwr.smichalowski.lab4.zad2.komponenty_swinga;
+
+import pl.pwr.smichalowski.lab4.zad2.figury.Figura;
+import pl.pwr.smichalowski.lab4.zad2.figury.Kolo;
+import pl.pwr.smichalowski.lab4.zad2.figury.Kwadrat;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Lab4Rysowanie extends JFrame {
+public class MyFrame extends JFrame {
 
     private JPanel jpanel;
     private MyPanel plotno;
@@ -19,7 +23,7 @@ public class Lab4Rysowanie extends JFrame {
     public LineBorder border = new LineBorder(Color.BLACK, 3, false);
 
 
-    public Lab4Rysowanie() {
+    public MyFrame() {
 
         // JFrame
         this.setTitle("Rysowanie figur na plotnie");
@@ -74,6 +78,7 @@ public class Lab4Rysowanie extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 switch(plotno.getWybranaFigura()){
                     case 0:
+                        komunikatText.setText("Figura nie została wybrana.");
                         break;
                     case 1:
                         f1 = new Kwadrat(e.getX(), e.getY());
@@ -202,7 +207,7 @@ public class Lab4Rysowanie extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Lab4Rysowanie().setVisible(true);
+                new MyFrame().setVisible(true);
             }
         });
     }
